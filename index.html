@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo de Encuestas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="ingreso">
+            <h2>Ingreso de Encuestas</h2>
+            <form id="encuestaForm">
+                <label for="pregunta1" id="pregunta1-label">¿Qué tipo de seguro tienes actualmente?</label>
+                <input type="text" id="pregunta1" name="pregunta1">
+                <label for="pregunta2" id="pregunta2-label">¿Qué te gustaría mejorar o cambiar en tu seguro actual?</label>
+                <input type="text" id="pregunta2" name="pregunta2">
+                <label for="pregunta3" id="pregunta3-label">¿Qué factor es más importante para ti al elegir un seguro nuevo?</label>
+                <input type="text" id="pregunta3" name="pregunta3">                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section class="visualizacion">
+            <h2>Encuestas Respondidas</h2>
+            <div id="encuestasContainer"></div>
+        </section>
+        <div class="background-image"></div>
+    </div>
+    <script src="Form.js"></script>
+</body>
+</html>
